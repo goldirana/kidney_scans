@@ -2,7 +2,7 @@ from src import logger
 from src.pipeline.stage1_data_ingestion import dataIngestionTrainingPipeline
 from src.pipeline.stage2_base_model import prepareBaseModelPipeline
 from src.pipeline.stage3_training_model import ModelTrainingPipeline
-
+from src.pipeline.stage4_model_evaluation import ModelEvaluationPipeline
 
 STAGE_NAME = "Data Ingestion stage"
 try:
@@ -37,9 +37,13 @@ except Exception as e:
     logger.exception(e)
     raise e
 
-STAGE_NAME = "Stage 4: Prediction"
+STAGE_NAME = "Stage 4: Evaluation"
 try:
-    pass
+    logger.info("*******************")
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+    obj = ModelEvaluationPipeline()
+    obj.main()
+    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
     logger.exception(e)
     raise e

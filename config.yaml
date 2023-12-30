@@ -5,7 +5,7 @@ data_ingestion:
   source_url: https://drive.google.com/file/d/1ZF74F8h_419Lf-jK-k9TRMHY1GazwSQd/view?usp=drive_link
   zip_path: data/raw/data.zip
   extract_path: data/processed
-
+  validation_path: data/validation
 
 prepare_base_model:
   root_dir: models/prepare_base_model

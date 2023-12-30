@@ -1,8 +1,10 @@
 from pathlib import Path
 import os
 from src.common import read_yaml, config_path, params_path
-from src.entity.config_entity import (DataIntegrationConfig, BaseModelConfig,
-                                      TrainModelConfig)
+from src.entity.config_entity import (DataIntegrationConfig, 
+                                      BaseModelConfig,
+                                      TrainModelConfig,
+                                      EvaluationConfig)
 
 
 #  config_path, params_path
@@ -56,4 +58,14 @@ class ConfigurationManager:
             params_batch_size=params.BATCH_SIZE,
             params_is_augmentation=params.AUGMENTATION,
             params_image_size=params.IMAGE_SIZE
+            )
+        
+    def get_evaluation_config(self) -> EvaluationConfig:
+            return EvaluationConfig(
+                    path_of_model = self.config.prepare_base_model,
+                    validation_path = self.config.data_ingestion.validation_path,
+                    all_params = self.params,
+                    mlflow_uri = "https://dagshub.com/goldirana1111/kidney_scans.mlflow",
+                    params_image_size = self.params.IMAGE_SIZE,
+                    params_batch_size = self.params.BATCH_SIZE
             )

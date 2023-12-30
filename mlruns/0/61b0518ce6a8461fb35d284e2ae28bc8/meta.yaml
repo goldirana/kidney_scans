@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/goldyrana/work/dl/kidney_scans/end_to_end_dl_project_kidney_scans/mlruns/0/61b0518ce6a8461fb35d284e2ae28bc8/artifacts
+end_time: 1703961164370
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 61b0518ce6a8461fb35d284e2ae28bc8
+run_name: gifted-mole-734
+run_uuid: 61b0518ce6a8461fb35d284e2ae28bc8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703961158722
+status: 3
+tags: []
+user_id: goldyrana

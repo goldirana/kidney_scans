@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/goldyrana/work/dl/kidney_scans/end_to_end_dl_project_kidney_scans/mlruns/0/80d2d565ce07489885278a1e77d3e947/artifacts
+end_time: 1703961827505
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 80d2d565ce07489885278a1e77d3e947
+run_name: inquisitive-colt-899
+run_uuid: 80d2d565ce07489885278a1e77d3e947
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1703961823166
+status: 3
+tags: []
+user_id: goldyrana

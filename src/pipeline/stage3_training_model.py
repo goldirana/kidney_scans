@@ -9,7 +9,7 @@ STAGE_NAME = "Stage 3: Training Model"
 class ModelTrainingPipeline:
     def __init__(self):
         pass
-    
+
     def main(self):
         config = ConfigurationManager()
         training_config = config.get_training_config()
